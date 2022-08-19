@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulários buttons checkbox and radio</title>
+</head>
+<body>
+
+    <h1>Checkbox and radio</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="isxmas"><input type="radio" name="sexo" id="isxmas">Masculino</label>
+            <label for="isxfem"><input type="radio" name="sexo" id="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox and Radio</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="nome" id="iname" placeholder="Digite o seu nome" required min="6" max="21">
+            </p>
+            <p><label>Qual animal você gosta mais?</label></p>
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas">Basquete<br></label>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut">Futebol<br></label>
+            <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat">Natação<br></label>
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten">Tênis</label>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
