@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando formlários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" placeholder="Escreva seu nome" required min="6" max="28">
+                
+                <label for="isobre">Sobrenome</label>
+                    <input type="text" name="sobre" id="isobre" required min="8"
+                    max="32" placeholder="Escreva seu sobrenome" >
+                
+            </p>
+            <p>
+                <label for="imail">Email:</label>
+                <input type="email" name="mail" id="imail" placeholder="Escreva seu email">
+                <label for="icel">Celular:</label>
+                <input type="tel" name="tel" id="icel" placeholder="(xx) xxxxx-xxxx">
+                
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Idade e gênero</legend>
+            <p>
+                <label for="iidade">Idade:</label><br>
+                <input type="number" name="idade" id="iidade" required min="18"
+                max="60">
+
+                <label for="isxmas"><input type="radio" name="sexo" id="isxmas">Masculino</label>
+                
+                <label for="isxfem"><input type="radio" name="sexo" id="isxfem">Feminino</label>
+
+
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <Legend>Filme Preferido</Legend>
+            <p>
+                
+               <label for="itarzan"><input type="checkbox" name="tarzna" id="itarzan">Tarzan</label><br>
+
+               <label for="iorigem"><input type="checkbox" name="origem" id="iorigem">Origem</label><br>
+
+               <label for="istarwars"><input type="checkbox" name="starwars" id="istarwars">Starwars</label><br>
+
+               <label for="icoringa"><input type="checkbox" name="coringa" id="icoringa">Coringa</label></p>
+          
+        </fieldset>
+
+        <fieldset>
+            <legend>Nivel de satisfação com a nossa empresa</legend>
+            <input type="range" name="range" id="irange" min="1" max="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Entre em contato conosco</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="nome" id="iname" placeholder="Escreva seu nome" required min="2" max="21"  >
+
+                <label for="itel">Tel:<input type="tel" name="tel" id="itel" placeholder="(xx) xxxx-xxxx"></label>
+            </p>
+
+            <p>
+                <legend>Deixe comentario</legend>
+                <label for="iform"><input type="text" name="form" id="iform" style="width:360px; height:200px"></label>
+            </p>
+             
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha a sua cor</legend>
+            <p><label for="icor"><input type="color" name="cor" id="icor"></label><br></p>
+            <p>
+                <label for="ifil">Carregue uma foto:</label>
+                <input type="file" name="file" id="ifil" >
+            </p>
+            
+             <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <label for="iprocurar"><input type="search" name="procurar" id="iprocurar"></label>
+             </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Mudar a senha</legend>
+            <p>
+                <label for="ipass">Senha: <input type="password" name="pass" id= "ipass" placeholder="Digite uma senha nova"></label>
+            </p>
+            <p>
+                <label for="ipass">Confirme sua Senha: <input type="password" name="pass" id= "ipass" placeholder="Confirme sua senha"></label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
